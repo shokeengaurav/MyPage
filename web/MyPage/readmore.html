@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 style="text-align: center;">私の歩み</h1>
+
+   
+    <p>
+       私は2016年から2018年まで高校で初めてプログラミングを学びました。高校ではプログラミングが最も得意な科目で、全科目の中でも最高得点を取得しました。しかし、母国では職業訓練校でITを学ぶことが一般的ではなく、就職先が少ないうえ、給与もあまり高くないという現実がありました。
+
+大学時代、オンラインゲームを通じて日本人の友人と出会ったことをきっかけに、日本に興味を持つようになりました。そして日本語を約6か月間勉強し、多くの日本人の友人を作ることができました。日本へ来る前から日本語で会話ができるようになり、日本語学校へ進学し、その後IT分野でキャリアを築くことを目標にするようになりました。
+
+来日後は、日本語で積極的にコミュニケーションを取り、1か月以内にアルバイトを見つけることができました。約1年半で30人ほどの友人ができ、現在は広島大学のトライアスロンチャンピオンである親友と一緒にトレーニングを続けています。
+
+私は新しいことに挑戦することが好きです。1つのアルバイトだけでも生活はできましたが、より多くの経験を積みたいという思いから、さまざまなアルバイトに応募し、最終的には4つの仕事と学業を両立しました。その経験を通して、時間管理能力やコミュニケーション能力、そして複数の仕事を同時に進める力を身につけることができました。
+
+私が日本へ来た一番の目的は、ITエンジニアとして活躍することです。その目標を実現するため、現在はAIWAシステムエンジニア専門学校で学んでいます。毎日新しい知識を学ぶことができ、とても充実した学生生活を送っています。
+
+福岡での生活は想像していた以上に大変でしたが、私は困難や挑戦を前向きに受け止める性格です。アルバイトではさまざまな困難や厳しい経験もありましたが、そのたびに諦めず、自分自身を成長させる機会だと考えて乗り越えてきました。
+
+日本で生活する中で、私は大きく成長しました。相手を思いやる姿勢や礼儀、責任感を大切にし、日本の文化や職場環境に適応できるよう努力を続けてきました。これからも学び続ける姿勢を忘れず、ITエンジニアとして会社に貢献できる人材を目指して努力していきたいと考えています。
+    </p>
+
+<!-- Toggle Button -->
+<p style="text-align: center; margin: 30px 0;">
+    <button onclick="togglePhotos()" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">
+            異文化への適応
+    </button>
+</p>
+
+<!-- Hidden Photos Section -->
+<div id="photoSection" style="display: none; margin-top: 20px;">
+    <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+        
+        <!-- Photo 1: Before coming to Japan -->
+        <div style="text-align: center;">
+            <h3 style="margin-bottom: 10px;">来日前 (2024年10月)</h3>
+            <img src="images/old_me.jpeg" alt="来日前（2024年10月）" style="max-width: 280px; height: auto; border-radius: 8px;">
+        </div>
+
+        <!-- Photo 2: After coming to Japan -->
+        <div style="text-align: center;">
+            <h3 style="margin-bottom: 10px;">現在（日本での生活）</h3>
+            <img src="images/8AB0534F-D0C2-417F-9211-C767CFFA0864.JPEG" alt="After coming to Japan" style="max-width: 280px; height: auto; border-radius: 8px;">
+        </div>
+
+    </div>
+</div>
+
+
+    
+    <!-- Optional link back to main page -->
+     <p style="text-align: center;">
+    <a href="index.html">Back to Home</a>
+</p>
+<script>
+    function togglePhotos() {
+        var section = document.getElementById("photoSection");
+        if (section.style.display === "none") {
+            section.style.display = "block";
+        } else {
+            section.style.display = "none";
+        }
+    }
+</script>
+
+    
+</body>
+</html>
